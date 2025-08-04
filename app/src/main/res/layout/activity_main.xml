@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="24dp"
+android:orientation="vertical"
+android:gravity="center"
+android:background="#ECEFF1"
+tools:context=".MainActivity">
+
+<!-- App Title -->
+<TextView
+    android:id="@+id/tvTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Celsius to Fahrenheit"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:textColor="#37474F"
+    android:layout_marginBottom="24dp" />
+
+<!-- Card-like container -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/card_bg"
+    android:padding="24dp"
+    android:elevation="6dp"
+    android:layout_marginBottom="20dp">
+
+    <!-- Input Field -->
+    <EditText
+        android:id="@+id/etCelsius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter °C"
+        android:inputType="numberDecimal"
+        android:backgroundTint="#607D8B"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <!-- Convert Button -->
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:background="@drawable/rounded_button" />
+
+    <!-- Clear Button -->
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:background="@drawable/rounded_clear_button"
+        android:stateListAnimator="@null"/>
+
+    <!-- Result -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#1A237E"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
+</LinearLayout>
